@@ -1,3 +1,6 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -8,10 +11,12 @@
 }
 
 /*
-  2. Remove default margin
+  2. Remove default margin, padding, and font-sizes and weights
 */
 * {
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /*
@@ -84,10 +89,9 @@ h6 {
   --cardbg: hsl(216, 50%, 16%);
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
+  font-size: 16px;
 }
 
-// Imports
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
 // Main Styling
 
@@ -102,9 +106,10 @@ body {
   background-color: var(--cardbg);
   border-radius: 10px;
   width: 340px;
-  margin: 50px auto;
-  padding: 10px 20px;
-  border: 3px solid red;
+  margin: 1.5rem auto;
+  padding: .7rem 1.2rem;
+  // temporary for visualization
+  // border: 3px solid red;
 
   #nft {
     width: 300px;
@@ -115,15 +120,28 @@ body {
     // border: 2px solid orange;
   }
 
+  .info {
+    // temporary for visibility
+    border: 2px solid yellow;
+  }
+
   h1 {
     color: var(--white);
     line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 600;
     // font-size: 20px;
 
   }
 
+  .link {
+    color: var(--white);
+    text-decoration: none;
+  }
+
   h2 {
     font-weight: 300;
+    font-size: 1.125rem;
 
   }
 }

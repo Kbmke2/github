@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 /*
   1. Use a more-intuitive box-sizing model.
 */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 *,
 *::before,
 *::after {
@@ -9,10 +9,12 @@
 }
 
 /*
-  2. Remove default margin
+  2. Remove default margin, padding, and font-sizes and weights
 */
 * {
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /*
@@ -83,6 +85,7 @@ h6 {
   --cardbg: hsl(216, 50%, 16%);
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
+  font-size: 16px;
 }
 
 body {
@@ -96,19 +99,28 @@ body {
   background-color: var(--cardbg);
   border-radius: 10px;
   width: 340px;
-  margin: 50px auto;
-  padding: 10px 20px;
-  border: 3px solid red;
+  margin: 1.5rem auto;
+  padding: 0.7rem 1.2rem;
 }
 .card #nft {
   width: 300px;
   margin: 10px auto;
   border-radius: 8px;
 }
+.card .info {
+  border: 2px solid yellow;
+}
 .card h1 {
   color: var(--white);
   line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card .link {
+  color: var(--white);
+  text-decoration: none;
 }
 .card h2 {
   font-weight: 300;
+  font-size: 1.125rem;
 }/*# sourceMappingURL=styles.css.map */
