@@ -85,6 +85,7 @@ h6 {
   --cardbg: hsl(216, 50%, 16%);
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
+  --activec: hsl(178, 100%, 50%);
   font-size: 16px;
 }
 
