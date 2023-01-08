@@ -108,8 +108,8 @@ body {
   margin: 10px auto;
   border-radius: 8px;
 }
-.card .info {
-  border: 2px solid yellow;
+.card .img-overlay {
+  visibility: hidden;
 }
 .card h1 {
   color: var(--white);
@@ -124,4 +124,27 @@ body {
 .card h2 {
   font-weight: 300;
   font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+.amntdays {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.amount {
+  color: var(--pc-cyan);
+  display: flex;
+}
+
+.time {
+  color: var(--pc-lb);
+  display: flex;
+}
+
+#jw {
+  border-radius: 50%;
+  width: 3rem;
+  float: left;
+  border: 1px solid var(--white);
 }/*# sourceMappingURL=styles.css.map */
