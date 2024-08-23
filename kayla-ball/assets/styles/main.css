@@ -76,7 +76,7 @@ h6 {
   font-size: 14px;
 }
 
-/* ALL ELEMENT FORMATTING BELOW HERE*/
+/* ELEMENT FORMATTING BELOW HERE*/
 
 html {
   /* ABOVE EFFECTS ALL ELEMENTS */
@@ -86,48 +86,71 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
+  background-color: beige;
 }
 
-/* ABOVE EFFECTS BODY ELEMENTS */
+/*  above effects all body elements*/
 
-/* BELOW ARE UTILITY CLASSES */
+/* ID FORMATTING BELOW */
+#hero-pic {
+  width: 12rem;
+}
+/* CLASS FORMATTING BELOW*/
+.hero-img {
+  border-radius: 50%;
+  margin: 2rem;
+}
+/* class formatting above */
+
+/* class formatting above */
+
+/* UTILITY CLASSES ARE BELOW */
+
 .abs {
   position: absolute;
 }
 
-/* ABOVE GIVES ELEMENTS ABSOLUTE POSITION */
+/*  gives elements absolute position */
 
 .rel {
   position: relative;
 }
 
-/* ABOVE GIVES ELEMENTS RELATIVE POSITION */
+/*  gives elements relative position */
 
 .flexr {
   display: flex;
   flex-direction: row;
 }
-/* ABOVE MAKES A FLEX ROW */
+/*  makes a flex row */
 
 .flexc {
+  display: flex;
   flex-direction: column;
 }
-/* ABOVE MAKES A FLEX COLUMN */
+/*  makes a flex column */
 
 .fcenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* ABOVE MAKES FLEX ELEMENTS CENTERS */
+/*  makes a flex elements centers */
+
+/* ABOVE EFFECTS UTILITY CLASSES */
+
+/* NAVIGATION BAR BELOW*/
 .navigation {
   list-style: none;
+  background-color: deeppink;
+  padding: 1rem;
 }
 
 .nav-item {
   margin: 0 0.5rem;
-  border: 1px solid black;
-  padding: 0.4rem;
+  border: 1px solid white;
+  padding: 0.52rem;
   border-radius: 1rem;
+  background-color: hotpink;
 }
-/* ABOVE ARE UTILITY CLASSES */
+/* NAVIGATION BAR ABOVE */
