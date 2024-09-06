@@ -125,7 +125,7 @@ h1 {
   border: 1px solid var(--Gray950);
   border-radius: 0.9rem;
   background-color: var(--cardBG);
-  box-shadow: 9px 8px 0px var(--Gray950);
+  box-shadow: 10px 10px 0px var(--Gray950);
 }
 
 .hero {
@@ -145,20 +145,37 @@ h1 {
   line-height: 3;
 }
 
-.non-active {
-  cursor: pointer;
-}
-
-.active {
-  cursor: pointer;
-}
-
 .link {
-  text-decoration: none;
   color: var(--Gray950);
   font-weight: 800;
   font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+.def {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.creator {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 0.8rem;
+}
+
+.avatar {
+  width: 2rem;
+}
+
+.name {
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
