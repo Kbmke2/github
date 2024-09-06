@@ -30,6 +30,7 @@
 html,
 body {
   height: 100%;
+  font-size: 16px;
 }
 
 /*
@@ -37,10 +38,10 @@ body {
   4. Add accessible line-height
   5. Improve text rendering
 */
-/* body {
+body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-} */
+}
 
 /*
   6. Improve media defaults
@@ -55,8 +56,18 @@ svg {
 }
 
 /*
-  7. Remove built-in form typography styles
-*/
+  7. Remove built-in form typography styles and ensures consistency by making text elements inherit properties from the body. */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+strong,
+em,
 input,
 button,
 textarea,
@@ -88,6 +99,66 @@ h6 {
   --Gray950: hsl(0, 0%, 7%);
 }
 
+/* ELEMENT FORMATTING */
+
+body {
+  background-color: var(--mainBG);
+}
+
+h1 {
+  width: 5rem;
+  padding: 0.1rem;
+  border-radius: 0.2rem;
+  font-weight: 800;
+  text-align: center;
+  background-color: var(--mainBG);
+}
+
+/* ID FORMATTING */
+
+/* CLASS FORMATTING */
+
+.card {
+  width: 20rem;
+  margin: 8rem auto;
+  padding: 0.1rem;
+  border: 1px solid var(--Gray950);
+  border-radius: 0.9rem;
+  background-color: var(--cardBG);
+  box-shadow: 9px 8px 0px var(--Gray950);
+}
+
+.hero {
+  display: flex;
+  width: 17.6rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+.info {
+  /* border: 1px solid red; */
+  margin: 1rem;
+}
+
+.pub {
+  font-size: 0.8rem;
+  line-height: 3;
+}
+
+.non-active {
+  cursor: pointer;
+}
+
+.active {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--Gray950);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
